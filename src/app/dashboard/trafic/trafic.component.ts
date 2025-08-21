@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-trafic',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './trafic.component.css'
 })
 export class TraficComponent {
-
+  @Input({required:true}) maxTraffic!:number;
 }

@@ -1,8 +1,14 @@
 <app-header />
 <main>
   <div id="dashboard">
-    <app-server-status currentStatus="currentStatus"/>
-    <app-trafic [dummyTrafficData]="dummyTrafficData"/>
-    <app-tickets/>
+    <div class="dashboard-item">
+      <app-server-status currentStatus="currentStatus"/>
+    </div>
+    <div class="dashboard-item">
+      <app-trafic [dummyTrafficData]="dummyTrafficData"/>
+    </div>
+    <div class="dashboard-item">
+      <app-tickets maxTraffic="maxTraffic"/>
+    </div>
   </div>
 </main>
