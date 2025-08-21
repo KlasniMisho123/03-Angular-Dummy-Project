@@ -1,8 +1,8 @@
 <app-header />
 <main>
   <div id="dashboard">
-    <app-server-status/>
-    <app-trafic/>
+    <app-server-status currentStatus="currentStatus"/>
+    <app-trafic [dummyTrafficData]="dummyTrafficData"/>
     <app-tickets/>
   </div>
 </main>

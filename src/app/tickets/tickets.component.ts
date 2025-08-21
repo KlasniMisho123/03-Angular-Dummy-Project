@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+interface DummyTrafficDataInterface {
+  id:string,
+  value:number,
+}
 
 @Component({
   selector: 'app-tickets',
@@ -7,6 +12,8 @@ import { Component } from '@angular/core';
   templateUrl: './tickets.component.html',
   styleUrl: './tickets.component.css'
 })
-export class TicketsComponent {
 
+export class TicketsComponent {
+  @Input({required:true}) dummyTrafficData!:DummyTrafficDataInterface;
+  
 }
