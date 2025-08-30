@@ -11,7 +11,7 @@ interface DummyTrafficDataInterface {
   standalone: true,
   imports: [NewTicketComponent],
   templateUrl: './tickets.component.html',
-  styleUrl: './tickets.component.css'
+  styleUrl: './tickets.component.css',
 })
 
 export class TicketsComponent {
