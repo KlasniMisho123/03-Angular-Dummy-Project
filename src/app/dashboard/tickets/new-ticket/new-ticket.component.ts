@@ -14,7 +14,10 @@ import { ControlComponent } from "../../../shared/control/control.component";
 export class NewTicketComponent { 
 
   onSubmit(titleInput:HTMLInputElement,request:HTMLTextAreaElement) {
-    console.log(titleInput, request,"subbmited")
+    const enteredTitle = titleInput.value;
+    const enteredRequest =  request.value;
+    console.log("enteredTitle: ",enteredTitle)
+    console.log("enteredRequest: ",enteredRequest)
   }
 
 }
